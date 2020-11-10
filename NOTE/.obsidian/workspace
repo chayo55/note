@@ -1,0 +1,82 @@
+{
+  "main": {
+    "id": "f2208457dcf74cff",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c4ba2a8480ae91e",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "多线程.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "30830a1c609a6968",
+    "type": "split",
+    "children": [
+      {
+        "id": "46617da8f4cb5e1f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "725d647bc37b7bad",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "81aff0f954da2799",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b71f916c7b38bcef",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e3ff50981096bd5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9bea2d2c400f8219",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "多线程.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "lastOpenFiles": [
+    "多线程.md",
+    "SpringBoot.md",
+    "images/springboot启动过程分析.png",
+    "JavaScript.md",
+    "基本算法.md"
+  ]
+}
