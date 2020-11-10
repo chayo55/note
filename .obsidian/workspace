@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "NOTE/SpringBoot.md",
-            "mode": "preview"
+            "file": "NOTE/基本算法.md",
+            "mode": "source"
           }
         }
       }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NOTE/SpringBoot.md"
+                "file": "NOTE/基本算法.md"
               }
             }
           }
@@ -75,15 +75,15 @@
     "width": 177
   },
   "lastOpenFiles": [
-    "NOTE/SpringBoot.md",
-    "NOTE/SpringMVC.md",
-    "NOTE/Redis.md",
-    "NOTE/分布式/分布式锁.md",
-    "NOTE/分布式锁.md",
-    "NOTE/参考链接.md",
+    "NOTE/基本算法.md",
+    "NOTE/设计模式.md",
+    "NOTE/JVM/JVM内存区域划分.md",
     "NOTE/List、Map、Set、Queue 总结.md",
+    "NOTE/Redis.md",
+    "NOTE/shiro.md",
+    "NOTE/SpringBoot.md",
+    "NOTE/JavaScript.md",
     "NOTE/锁.md",
-    "NOTE/线程/多线程.md",
-    "NOTE/线程/ThreadLocal.md"
+    "NOTE/LRU.md"
   ]
 }
