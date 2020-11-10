@@ -1,0 +1,89 @@
+{
+  "main": {
+    "id": "797ae340b3b812d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ee6e656c8d6fea5",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "NOTE/SpringBoot.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b37e541f674bc1da",
+    "type": "split",
+    "children": [
+      {
+        "id": "791eaf9dc0d42ad1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9128b4fdf148307f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "3fbac6c21668f5d8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "reent"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 302
+  },
+  "right": {
+    "id": "56efc3f008a77b05",
+    "type": "split",
+    "children": [
+      {
+        "id": "5eccdfc41cec85d1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3328d6a81810fb34",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "NOTE/SpringBoot.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 177
+  },
+  "lastOpenFiles": [
+    "NOTE/SpringBoot.md",
+    "NOTE/SpringMVC.md",
+    "NOTE/Redis.md",
+    "NOTE/分布式/分布式锁.md",
+    "NOTE/分布式锁.md",
+    "NOTE/参考链接.md",
+    "NOTE/List、Map、Set、Queue 总结.md",
+    "NOTE/锁.md",
+    "NOTE/线程/多线程.md",
+    "NOTE/线程/ThreadLocal.md"
+  ]
+}
