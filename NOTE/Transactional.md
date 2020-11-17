@@ -68,7 +68,7 @@ MVCC只在`COMMITTED READ`（读提交）和`REPEATABLE READ`（可重复读）�
 
 
 ### 事务失效  
-原因
+原因,除开配置错误，例如忘记配置事务管理器，@EnableTransactionManagement ,事务传播级别设置错误等等
 1. 数据库层面：数据库引擎是否支持事务
 2. 业务代码层面：
 	1. 需要事务管理的类是否被spring管理
@@ -93,3 +93,4 @@ MVCC只在`COMMITTED READ`（读提交）和`REPEATABLE READ`（可重复读）�
 
 
 - __事务失效[[参考链接#一个Transaction哪里来这么多坑？ https mp weixin qq com s rz5w2KWzs7ubzO36lGNA4Q|一个Transaction哪里来这么多坑？]] __
+- [讲讲 Spring 事务有哪些坑?](https://mp.weixin.qq.com/s/BRRELMbULFL-2eZRSehC7w)

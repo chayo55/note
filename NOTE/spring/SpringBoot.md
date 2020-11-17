@@ -80,6 +80,6 @@
 
 
 CommandLineRunner 此接口定义了一种规范，可以在spring框架初始化以后执行一些逻辑。
-实现ComandLineRunner重写run方法，可以获取spring容器中的一些初始化资源[[#springboot]]
+实现ComandLineRunner重写run方法，可以获取spring容器中的一些初始化资源[[SpringBoot#springboot]]
 
 

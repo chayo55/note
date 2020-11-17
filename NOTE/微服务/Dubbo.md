@@ -25,6 +25,7 @@ Remoting层、封装了网络传输协议，和数据转换。
 `ProxyFactory`获取到`invoker`，`invoker`包含了**需要执行的方法**的对象信息和具体的**URL地址**；再通过`DubboProtocol`的实现把包装后的`invoker`转换成`exporter`，然后启动服务器server，监听端口；最后`RegisterProtocol`保存`URL`和`exporter`的映射关系，同时注册到**register注册中心**
 
 ---
+
 ### Dubbo的负载均衡策略
 - **加权随机**(按权重比分配区间，然后随机落到某个区间)
 - **一致性hash**(一致性hash算法)

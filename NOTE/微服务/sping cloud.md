@@ -236,8 +236,6 @@ Feign 默认启用了Ribbon的负载均衡和重试，0配置
 - MaxAutoRetriesNextServer=1
 - ReadTimeout=1000
 
-
-
 重试参数配置
 
 ```yml
@@ -250,7 +248,7 @@ item-service:
   ribbon: 
     MaxAutoRetries: 0
 ```
-
+![[SpringCloud中Feign服务调用请求方式及参数总结]]
 
 
 ## Feign 集成 Hystrix
@@ -446,7 +444,7 @@ spring:
 ---
 
 ## BUS消息总线
-添加[[RabbitMQ]]依赖，bus依赖
+添加[[消息队列]]依赖，bus依赖
 ```pom
 <dependency>
 	<groupId>org.springframework.boot</groupId>

@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "NOTE/基本算法.md",
+            "file": "NOTE/spring/SpringMVC.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reent"
+                "query": ""
               }
             }
           }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NOTE/基本算法.md"
+                "file": "NOTE/spring/SpringMVC.md"
               }
             }
           }
@@ -75,15 +75,15 @@
     "width": 177
   },
   "lastOpenFiles": [
-    "NOTE/基本算法.md",
-    "NOTE/设计模式.md",
-    "NOTE/JVM/JVM内存区域划分.md",
-    "NOTE/List、Map、Set、Queue 总结.md",
+    "NOTE/spring/SpringMVC.md",
     "NOTE/Redis.md",
-    "NOTE/shiro.md",
-    "NOTE/SpringBoot.md",
-    "NOTE/JavaScript.md",
-    "NOTE/锁.md",
-    "NOTE/LRU.md"
+    "NOTE/线程/ThreadLocal.md",
+    "NOTE/参考链接.md",
+    "NOTE/JVM/JVM调优.md",
+    "NOTE/JVM/JVM.md",
+    "NOTE/单点登录和跨域.md",
+    "NOTE/MYSQL.md",
+    "NOTE/微服务/消息队列.md",
+    "NOTE/锁.md"
   ]
 }

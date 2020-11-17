@@ -1,5 +1,6 @@
 ## ThreadLocal是什么？
 ThreadLocal提供了线程的局部变量，每个线程都可以通过set()和get()来对这个局部变量进行操作，但不会和其他线程的局部变量进行冲突，实现了**线程的数据隔离**～。
+ThreadLocal是一个变量的本地副本，线程对变量的操作不会影响其他线程。
 简要言之：**往ThreadLocal中填充的变量属于当前线程，该变量对其他线程而言是隔离的**。
 
 ---
@@ -7,7 +8,7 @@ ThreadLocal提供了线程的局部变量，每个线程都可以通过set()和g
 
 ## ThreadLocal有哪些应用
 Spring中的单例bean，使用`ThreadLoca`l实现了多线程下相同变量的线程安全问题。
-Spring中的事务，spring在事务开始时，会使用`ThreadLocal`，将`connection`和当前线程绑定起来，这样在整个事务中都是使用这个`connection`,实现事务的隔离性
+[[Transactional#Spring中事务管理|Spring中的事务]]，spring在事务开始时，会使用`ThreadLocal`，将`connection`和当前线程绑定起来，这样在整个事务中都是使用这个`connection`,实现事务的隔离性
 
 ---
 
@@ -119,3 +120,6 @@ static class ThreadLocalMap {
 	- 但并不是所有使用 ThreadLocal 的地方都要在最后 remove()，
 
 ---
+
+### FastThreadLocal
+[FastThreadLocal](https://mp.weixin.qq.com/s/aItosqUu1aMvWqJ2ZMqy5Q)

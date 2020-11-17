@@ -99,3 +99,5 @@ show profile for query 15;
 [[参考链接#MySQL夺命连环13问！ https mp weixin qq com s UFb-hqxc_nSfSZBXeOfx8Q|MySQL夺命连环13问！]]
 
 [37 个 MySQL 数据库小技巧](https://mp.weixin.qq.com/s/V6mQeMq9xrV5VXj62ipL_w)
+
+[线上千万级大表排序，如何优化？](https://mp.weixin.qq.com/s/I5lh4ZRDRWlyeDBR7MTAXg)
