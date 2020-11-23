@@ -24,6 +24,9 @@
 			- spring中的资源初始化
 				- 构建对象
 				- 基于对象存储数据(例如配置信息，默认值)
+
+![[Spring#spring容器启动流程]]
+
 ---
 3. ### spring管理Bean对象
 - SpringBoot启动后Bean的实例化过程

@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "3ee6e656c8d6fea5",
+        "id": "d0129b3d7effa9f4",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "NOTE/spring/SpringMVC.md",
+            "file": "NOTE/Transactional.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ""
+                "query": "AQS",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
               }
             }
           }
@@ -64,7 +69,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NOTE/spring/SpringMVC.md"
+                "file": "NOTE/Transactional.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           }
@@ -72,18 +82,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 177
+    "width": 179
   },
   "lastOpenFiles": [
-    "NOTE/spring/SpringMVC.md",
+    "NOTE/Transactional.md",
     "NOTE/Redis.md",
-    "NOTE/线程/ThreadLocal.md",
-    "NOTE/参考链接.md",
-    "NOTE/JVM/JVM调优.md",
-    "NOTE/JVM/JVM.md",
-    "NOTE/单点登录和跨域.md",
-    "NOTE/MYSQL.md",
+    "NOTE/微服务/微服务.md",
+    "NOTE/分布式/分库分表.md",
+    "NOTE/spring/Spring.md",
+    "NOTE/微服务/Dubbo.md",
+    "NOTE/微服务/sping cloud.md",
     "NOTE/微服务/消息队列.md",
-    "NOTE/锁.md"
+    "NOTE/参考链接.md",
+    "NOTE/线程/多线程.md"
   ]
 }

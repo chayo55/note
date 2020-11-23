@@ -12,3 +12,27 @@ Spring架构
 |      | Spring ORM          | Spring 框架插入了若干个 ORM 框架，从而提供了 ORM 的对象关系工具，其中包括JDO、Hibernate和iBatis SQL Map。所有这些都遵从 Spring 的通用事务和 DAO 异常层次结构。 |
 |      | Spring Web          | Web上下文模块建立在应用程序上下文模块之上，为基于 Web 的应用程序提供了上下文。所以Spring 框架支持与 Jakarta Struts的集成。Web模块还简化了处理多部分请求以及将请求参数绑定到域对象的工作。 |
 |      | Spring MVC框架      | MVC 框架是一个全功能的构建 Web 应用程序的 MVC 实现。通过策略接口，MVC 框架变成为高度可配置的，MVC 容纳了大量视图技术，其中包括 JSP、Velocity、Tiles、iText 和 POI。 |
+
+
+## spring容器启动流程
+[Spring源码系列之容器启动流程](https://mp.weixin.qq.com/s/q6zs7xRjpcB4YxLw6w477w)
+### 基础概念
+1. `Spring`会将所有交由`Spring`管理的类，扫描其`class`文件，将其解析成`BeanDefinition`，在`BeanDefinition`中会描述类的信息，例如:这个类是否是单例的，`Bean`的类型，是否是懒加载，依赖哪些类，自动装配的模型。`Spring`创建对象时，就是根据`BeanDefinition`中的信息来创建`Bean`。
+
+2. `Spring`容器在本文可以简单理解为`DefaultListableBeanFactory`,它是`BeanFactory`的实现类，这个类有几个非常重要的属性：`beanDefinitionMap`是一个`map`，用来存放`bean`所对应的`BeanDefinition`；`beanDefinitionNames`是一个`List`集合，用来存放所有`bean`的`name`；`singletonObjects`是一个`Map`，用来存放所有创建好的单例`Bean`。
+
+3. `Spring`中有很多后置处理器，但最终可以分为两种，一种是`BeanFactoryPostProcessor`，一种是`BeanPostProcessor`。前者的用途是用来干预`BeanFactory`的创建过程，后者是用来干预`Bean`的创建过程。后置处理器的作用十分重要，`bean`的创建以及`AOP`的实现全部依赖后置处理器。
+
+### 大概流程
+通过`AnnotationConfigApplicationContext`的有参构造方法入手，三个方法：`this(); ``register(componentClasses);` `refresh();`
+在`this()`中初始化了一个`BeanFactory`，即`DefaultListableBeanFactory`；然后向容器中添加了7个内置的`bean`，其中就包括`ConfigurationClassPostProcessor`。
+
+在`refresh()`方法中，又重点分析了`invokeBeanFactoryPostProcessor()`方法和`finishBeanFactoryInitialization()`方法。
+
+在`invokeBeanFactoryPostProcessor()`方法中，通过`ConfigurationClassPostProcessor`类扫描出了所有交给`Spring`管理的类，并将`class`文件解析成对应的`BeanDefinition`。
+
+在`finishBeanFactoryInitialization()`方法中，完成了非懒加载的单例`Bean`的实例化和初始化操作，主要流程为`getBean()` ——>`doGetBean()`——>`createBean()`——>`doCreateBean()`。在`bean`的创建过程中，一共出现了8次`BeanPostProcessor`的执行，在这些后置处理器的执行过程中，完成了`AOP`的实现、`bean`的自动装配、属性赋值等操作。
+
+[通过源码看Bean的创建过程](https://mp.weixin.qq.com/s/WwjicbYtcjRNDgj2bRuOoQ)
+Spring中单例Bean的生命周期的图示：
+![[spring中bean的生命周期图.jpg]]

@@ -82,6 +82,7 @@ show profile for query 15;
 ```
 
 [书写高质量SQL的30条建议](https://mp.weixin.qq.com/s/5UPwmWVtnT5WoWTGj7uHLg)
+[52 条 SQL 语句性能优化策略](https://mp.weixin.qq.com/s/C4aBqeNzravq7n_SVz3R5g)
 1. 不要使用`select *` ，使用`select name,age`具体字段
 	- 只查询需要的字段，节省资源，减少网络开销
 	- `select *`  有可能不会使用索引，效率大大降低
