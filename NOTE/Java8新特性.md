@@ -40,3 +40,4 @@ interface A extends Human,Animal {
 
 
 ### Stream
+[https://www.exception.site/java8/java8-new-features#stream-流](https://www.exception.site/java8/java8-new-features#stream-流)

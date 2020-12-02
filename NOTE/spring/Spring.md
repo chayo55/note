@@ -36,3 +36,18 @@ Spring架构
 [通过源码看Bean的创建过程](https://mp.weixin.qq.com/s/WwjicbYtcjRNDgj2bRuOoQ)
 Spring中单例Bean的生命周期的图示：
 ![[spring中bean的生命周期图.jpg]]
+
+## mybatis在spring中的事务
+调用`@Transactional`注解描述的方法
+			|
+进入spring的`TransactionalInterceptor`的`invoke()`方法
+			|
+由`TransactionAspectSupport`类中的`invokeWithinTransaction()`方法实现事务管理
+			|
+最后由`DataSourceTransactionManager`类进行具体的事务操作，并将数据库连接利用`TransactionSynchronizationManager()`进行绑定
+			|
+接着进入业务逻辑，即由Mybatis的`DefaultSqlSessionFactory`从`TransactionSynchronizationManager`中获取数据库连接，然后进行SQL语句的执行
+			|
+Spring根据执行结果进行`commit()`或者`rollback()`操作
+			|
+流程结束

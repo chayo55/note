@@ -310,7 +310,7 @@ public class Sp11ZuulApplication {
 }
 ```
 ### Zuul集成Ribbon
-- **Zuul已经集成了Ribbon并**默认开启了负载均衡****
+- **Zuul已经集成了Ribbon并**默认开启了负载均衡**
 - **zuul + ribbon 重试**
 	1. 添加依赖
 	```pom

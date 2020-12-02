@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "NOTE/Transactional.md",
-            "mode": "source"
+            "file": "NOTE/MYSQL.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "AQS",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NOTE/Transactional.md",
+                "file": "NOTE/MYSQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,15 +85,15 @@
     "width": 179
   },
   "lastOpenFiles": [
-    "NOTE/Transactional.md",
-    "NOTE/Redis.md",
-    "NOTE/微服务/微服务.md",
-    "NOTE/分布式/分库分表.md",
-    "NOTE/spring/Spring.md",
-    "NOTE/微服务/Dubbo.md",
-    "NOTE/微服务/sping cloud.md",
+    "NOTE/MYSQL.md",
     "NOTE/微服务/消息队列.md",
-    "NOTE/参考链接.md",
-    "NOTE/线程/多线程.md"
+    "NOTE/Redis.md",
+    "Untitled.md",
+    "NOTE/设计模式.md",
+    "NOTE/基本算法.md",
+    "NOTE/Solr与ElasticSearch.md",
+    "NOTE/Java8新特性.md",
+    "NOTE/消息中间件/Untitled.md",
+    "NOTE/分布式/分布式事务.md"
   ]
 }
